@@ -111,6 +111,9 @@
                                     <constraint firstAttribute="height" constant="50" id="CQk-J8-I9T"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="left_arrow"/>
+                                <connections>
+                                    <action selector="backButtonPress:" destination="xME-CK-AaB" eventType="touchUpInside" id="BW6-E5-VF3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYE-iZ-zIR">
                                 <rect key="frame" x="350" y="23" width="44" height="30"/>
@@ -119,6 +122,9 @@
                                     <constraint firstAttribute="width" constant="44" id="gmO-3x-jYn"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="share"/>
+                                <connections>
+                                    <action selector="share:" destination="xME-CK-AaB" eventType="touchUpInside" id="mJw-xy-PgP"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="sound" maximumValueImage="sound" translatesAutoresizingMaskIntoConstraints="NO" id="Ikh-NQ-ZYB">
                                 <rect key="frame" x="38" y="746.5" width="338" height="30"/>
@@ -151,6 +157,9 @@
                                     <constraint firstAttribute="height" constant="50" id="OYJ-j5-IUI"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="right_arrow"/>
+                                <connections>
+                                    <action selector="nextButtonPress:" destination="xME-CK-AaB" eventType="touchUpInside" id="4Qs-rR-z1t"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rho-lM-z5t">
                                 <rect key="frame" x="40" y="539.5" width="33" height="17"/>

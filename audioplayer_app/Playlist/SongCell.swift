@@ -13,6 +13,7 @@ class SongCell: UITableViewCell {
     @IBOutlet weak var albumPhoto: UIImageView!
     @IBOutlet weak var durationLabel: UILabel!
     
+    var songIndex: IndexPath? = nil
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

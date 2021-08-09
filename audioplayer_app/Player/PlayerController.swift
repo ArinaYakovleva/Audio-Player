@@ -21,42 +21,51 @@ class PlayerController: UIViewController {
     @IBOutlet weak var leftTimeLabel: UILabel!
     
     var songData: Song? = nil
-    
+    var songIndex: Int? = nil
     var audioPlayer = AVAudioPlayer()
     var timer: Timer? = nil
-    
+    var currentSong: Song? = nil
+    var songs:[Song]? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         songTimeSlider.addTarget(self, action: #selector(changeSongTime), for: .valueChanged)
-        
         if let data = songData{
-            songName.text = data.author
-            albumPhoto.image = data.albumPhoto
-            name.text = data.name
-            author.text = data.author
-            durationLabel.text = data.duration
-            do {
-                if let audioPath = Bundle.main.path(forResource: data.fileName, ofType: "mp3"){
-                    
-                try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
-                    
-                    songTimeSlider.maximumValue = Float(audioPlayer.duration)
-               }
-                
-            } catch {
-                print("ERROR")
-            }
+            let songsProvider = SongProvider()
+            songs = songsProvider.songs()
+            songIndex = data.id
+            
+            configureInterface()
         }
-        self.audioPlayer.play()
-        playButton.setImage(UIImage(named: "pause.png"), for: .normal)
-        
-        configureTimer()
-   
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        audioPlayer.stop()
+    }
 
+    @IBAction func backButtonPress(_ sender: Any) {
+        if let index = songIndex{
+            if index > 0{
+                songIndex = index - 1
+                configureInterface()
+                
+            }
+
+        }
+    }
+    
+    @IBAction func nextButtonPress(_ sender: Any) {
+        if let data = songs, let index = songIndex{
+            if index < (data.count - 1){
+                songIndex = index + 1
+                configureInterface()
+                
+            }
+
+        }
+        
+    }
     
     @IBAction func backToPlayList(_ sender: Any) {
         performSegue(withIdentifier: "toPlaylist", sender: nil)
@@ -78,10 +87,41 @@ class PlayerController: UIViewController {
         }
     }
     
+    @IBAction func share(_ sender: Any) {
+        let items: [Any] = ["\(author.text!)-\(name.text!)"]
+        let activityController = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
+    }
     @objc func changeSongTime(sender: UISlider){
         if sender == songTimeSlider{
             self.audioPlayer.currentTime = TimeInterval(sender.value)
         }
+    }
+    
+    func configureInterface(){
+        if let song = songs?[songIndex ?? 0]{
+            songName.text = song.author
+            albumPhoto.image = song.albumPhoto
+            name.text = song.name
+            author.text = song.author
+            durationLabel.text = song.duration
+            do {
+                if let audioPath = Bundle.main.path(forResource: song.fileName, ofType: "mp3"){
+                    
+                try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
+                    
+                    songTimeSlider.maximumValue = Float(audioPlayer.duration)
+               }
+                
+            } catch {
+                print("ERROR")
+            }
+        }
+
+        self.audioPlayer.play()
+        playButton.setImage(UIImage(named: "pause.png"), for: .normal)
+        
+        configureTimer()
     }
     
     func configureTimer(){

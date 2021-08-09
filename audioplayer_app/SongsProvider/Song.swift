@@ -13,4 +13,5 @@ struct Song{
     let duration: String
     let author: String
     let fileName: String
+    let id: Int
 }
