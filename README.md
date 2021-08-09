@@ -1,11 +1,7 @@
 # Audio-Player
 Приложение аудио плеер для прослушивания песен
 
+Для прослушивания со звуком необходимо запустить проект в Xcode
 
 
-<video width="320" height="600" controls>
-  <source src="demo_player.mov" type="video/mp4">
-</video>
-
-
-![](demo_player.mov)
+![](final_demo.mov)
