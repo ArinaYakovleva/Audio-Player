@@ -11,6 +11,7 @@ import AVFoundation
 class SongProvider{
     
     func songs() -> [Song]{
+        
         return [
             Song(albumPhoto: UIImage(named: "fort_atlantic.jpg")!, name: "Let your heart hold fast", duration: "3:47",author: "Fort Atlantic", fileName: "Let Your Heart Hold Fast", id: 0),
             Song(albumPhoto: UIImage(named: "grizly_bear.jpg")!, name: "Two Weeks", duration: "4:03", author: "Grizly Bear", fileName: "Grizzly Bear - Two Weeks", id: 1),

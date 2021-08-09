@@ -112,7 +112,6 @@ class PlayerController: UIViewController {
                     
                     songTimeSlider.maximumValue = Float(audioPlayer.duration)
                }
-                
             } catch {
                 print("ERROR")
             }
