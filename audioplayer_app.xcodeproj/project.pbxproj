@@ -9,21 +9,99 @@
 /* Begin PBXBuildFile section */
 		98BE817426C12BCE00293A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE817326C12BCE00293A45 /* AppDelegate.swift */; };
 		98BE817626C12BCE00293A45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE817526C12BCE00293A45 /* SceneDelegate.swift */; };
-		98BE817826C12BCE00293A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE817726C12BCE00293A45 /* ViewController.swift */; };
 		98BE817B26C12BCE00293A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BE817926C12BCE00293A45 /* Main.storyboard */; };
 		98BE817D26C12BCF00293A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BE817C26C12BCF00293A45 /* Assets.xcassets */; };
 		98BE818026C12BCF00293A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BE817E26C12BCF00293A45 /* LaunchScreen.storyboard */; };
+		98BE818A26C12CE300293A45 /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE818926C12CE300293A45 /* PlaylistController.swift */; };
+		98BE818E26C12CFC00293A45 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE818C26C12CFC00293A45 /* SongCell.swift */; };
+		98BE818F26C12CFC00293A45 /* SongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98BE818D26C12CFC00293A45 /* SongCell.xib */; };
+		98BE819326C12D5500293A45 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE819226C12D5500293A45 /* PlayerController.swift */; };
+		98BE819826C12E5D00293A45 /* Let Your Heart Hold Fast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98BE819726C12E5D00293A45 /* Let Your Heart Hold Fast.mp3 */; };
+		98BE819B26C12E7000293A45 /* Grizzly Bear - Two Weeks.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98BE819A26C12E7000293A45 /* Grizzly Bear - Two Weeks.mp3 */; };
+		98BE819E26C12EF400293A45 /* The Shins - Simple Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98BE819D26C12EF400293A45 /* The Shins - Simple Song.mp3 */; };
+		98BE81A426C1336E00293A45 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE81A326C1336E00293A45 /* Song.swift */; };
+		98BE81A826C1340E00293A45 /* SongProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE81A726C1340E00293A45 /* SongProvider.swift */; };
+		98BE81B626C137E200293A45 /* fort_atlantic@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81B426C137E200293A45 /* fort_atlantic@2x.jpg */; };
+		98BE81B726C137E200293A45 /* fort_atlantic@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81B526C137E200293A45 /* fort_atlantic@3x.jpg */; };
+		98BE81BA26C1386100293A45 /* grizly_bear@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81B926C1386100293A45 /* grizly_bear@2x.jpg */; };
+		98BE81BD26C1387600293A45 /* grizly_bear@3x .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81BC26C1387600293A45 /* grizly_bear@3x .jpg */; };
+		98BE81C126C138A400293A45 /* theshins@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81BF26C138A400293A45 /* theshins@3x.jpg */; };
+		98BE81C226C138A400293A45 /* theshins@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81C026C138A400293A45 /* theshins@2x.jpg */; };
+		98BE81C926C15D3700293A45 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE81C826C15D3700293A45 /* HeaderView.swift */; };
+		98BE81D626C1650A00293A45 /* play_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81D326C1650A00293A45 /* play_button@2x.png */; };
+		98BE81D726C1650A00293A45 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81D426C1650A00293A45 /* play_button.png */; };
+		98BE81D826C1650A00293A45 /* play_button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81D526C1650A00293A45 /* play_button@3x.png */; };
+		98BE81DD26C165C400293A45 /* chevron-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81DA26C165C400293A45 /* chevron-left.png */; };
+		98BE81DE26C165C400293A45 /* chevron-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81DB26C165C400293A45 /* chevron-left@2x.png */; };
+		98BE81DF26C165C400293A45 /* chevron-left@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81DC26C165C400293A45 /* chevron-left@3x.png */; };
+		98BE81E426C1667800293A45 /* chevron-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81E126C1667800293A45 /* chevron-right@2x.png */; };
+		98BE81E526C1667800293A45 /* chevron-right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81E226C1667800293A45 /* chevron-right@3x.png */; };
+		98BE81E626C1667800293A45 /* chevron-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81E326C1667800293A45 /* chevron-right.png */; };
+		98BE81EB26C167ED00293A45 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81E826C167ED00293A45 /* share@2x.png */; };
+		98BE81EC26C167ED00293A45 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81E926C167ED00293A45 /* share.png */; };
+		98BE81ED26C167ED00293A45 /* share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81EA26C167ED00293A45 /* share@3x.png */; };
+		98BE81F226C1690300293A45 /* sound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81EF26C1690300293A45 /* sound@2x.png */; };
+		98BE81F326C1690300293A45 /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81F026C1690300293A45 /* sound.png */; };
+		98BE81F426C1690300293A45 /* sound@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81F126C1690300293A45 /* sound@3x.png */; };
+		98BE81FA26C1699D00293A45 /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81F726C1699D00293A45 /* arrow_down@3x.png */; };
+		98BE81FB26C1699D00293A45 /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81F826C1699D00293A45 /* arrow_down.png */; };
+		98BE81FC26C1699D00293A45 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE81F926C1699D00293A45 /* arrow_down@2x.png */; };
+		98BE820326C1782200293A45 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE820026C1782200293A45 /* pause.png */; };
+		98BE820426C1782200293A45 /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE820126C1782200293A45 /* pause@3x.png */; };
+		98BE820526C1782200293A45 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98BE820226C1782200293A45 /* pause@2x.png */; };
+		98DD7A1B26C1370D00B1D61C /* theshins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A1A26C1370D00B1D61C /* theshins.jpg */; };
+		98DD7A1D26C1371F00B1D61C /* grizly_bear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A1C26C1371F00B1D61C /* grizly_bear.jpg */; };
+		98DD7A1F26C1373000B1D61C /* fort_atlantic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 98DD7A1E26C1373000B1D61C /* fort_atlantic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		98BE817026C12BCE00293A45 /* audioplayer_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audioplayer_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BE817326C12BCE00293A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98BE817526C12BCE00293A45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98BE817726C12BCE00293A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98BE817A26C12BCE00293A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98BE817C26C12BCF00293A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98BE817F26C12BCF00293A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98BE818126C12BCF00293A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98BE818926C12CE300293A45 /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
+		98BE818C26C12CFC00293A45 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		98BE818D26C12CFC00293A45 /* SongCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongCell.xib; sourceTree = "<group>"; };
+		98BE819226C12D5500293A45 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		98BE819726C12E5D00293A45 /* Let Your Heart Hold Fast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Let Your Heart Hold Fast.mp3"; path = "../../../../../Music/Music/Media.localized/Fort Atlantic/Unknown Album/Let Your Heart Hold Fast.mp3"; sourceTree = "<group>"; };
+		98BE819A26C12E7000293A45 /* Grizzly Bear - Two Weeks.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Grizzly Bear - Two Weeks.mp3"; path = "../../../../../Music/Music/Media.localized/Unknown Artist/Unknown Album/Grizzly Bear - Two Weeks.mp3"; sourceTree = "<group>"; };
+		98BE819D26C12EF400293A45 /* The Shins - Simple Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "The Shins - Simple Song.mp3"; path = "../../../../../Downloads/The Shins - Simple Song.mp3"; sourceTree = "<group>"; };
+		98BE81A326C1336E00293A45 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		98BE81A726C1340E00293A45 /* SongProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongProvider.swift; sourceTree = "<group>"; };
+		98BE81B426C137E200293A45 /* fort_atlantic@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fort_atlantic@2x.jpg"; path = "../../../../fort_atlantic@2x.jpg"; sourceTree = "<group>"; };
+		98BE81B526C137E200293A45 /* fort_atlantic@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "fort_atlantic@3x.jpg"; path = "../../../../fort_atlantic@3x.jpg"; sourceTree = "<group>"; };
+		98BE81B926C1386100293A45 /* grizly_bear@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grizly_bear@2x.jpg"; path = "../../../../grizly_bear@2x.jpg"; sourceTree = "<group>"; };
+		98BE81BC26C1387600293A45 /* grizly_bear@3x .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "grizly_bear@3x .jpg"; path = "../../../../grizly_bear@3x .jpg"; sourceTree = "<group>"; };
+		98BE81BF26C138A400293A45 /* theshins@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "theshins@3x.jpg"; path = "../../../../theshins@3x.jpg"; sourceTree = "<group>"; };
+		98BE81C026C138A400293A45 /* theshins@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "theshins@2x.jpg"; path = "../../../../theshins@2x.jpg"; sourceTree = "<group>"; };
+		98BE81C826C15D3700293A45 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		98BE81D326C1650A00293A45 /* play_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play_button@2x.png"; path = "../../../play_button@2x.png"; sourceTree = "<group>"; };
+		98BE81D426C1650A00293A45 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_button.png; path = ../../../play_button.png; sourceTree = "<group>"; };
+		98BE81D526C1650A00293A45 /* play_button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play_button@3x.png"; path = "../../../play_button@3x.png"; sourceTree = "<group>"; };
+		98BE81DA26C165C400293A45 /* chevron-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chevron-left.png"; path = "../../../chevron-left.png"; sourceTree = "<group>"; };
+		98BE81DB26C165C400293A45 /* chevron-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chevron-left@2x.png"; path = "../../../chevron-left@2x.png"; sourceTree = "<group>"; };
+		98BE81DC26C165C400293A45 /* chevron-left@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chevron-left@3x.png"; path = "../../../chevron-left@3x.png"; sourceTree = "<group>"; };
+		98BE81E126C1667800293A45 /* chevron-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chevron-right@2x.png"; path = "../../../chevron-right@2x.png"; sourceTree = "<group>"; };
+		98BE81E226C1667800293A45 /* chevron-right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chevron-right@3x.png"; path = "../../../chevron-right@3x.png"; sourceTree = "<group>"; };
+		98BE81E326C1667800293A45 /* chevron-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chevron-right.png"; path = "../../../chevron-right.png"; sourceTree = "<group>"; };
+		98BE81E826C167ED00293A45 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@2x.png"; path = "../../../share@2x.png"; sourceTree = "<group>"; };
+		98BE81E926C167ED00293A45 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = share.png; path = ../../../share.png; sourceTree = "<group>"; };
+		98BE81EA26C167ED00293A45 /* share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share@3x.png"; path = "../../../share@3x.png"; sourceTree = "<group>"; };
+		98BE81EF26C1690300293A45 /* sound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sound@2x.png"; path = "../../../sound@2x.png"; sourceTree = "<group>"; };
+		98BE81F026C1690300293A45 /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sound.png; path = ../../../sound.png; sourceTree = "<group>"; };
+		98BE81F126C1690300293A45 /* sound@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sound@3x.png"; path = "../../../sound@3x.png"; sourceTree = "<group>"; };
+		98BE81F726C1699D00293A45 /* arrow_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "../../../arrow_down@3x.png"; sourceTree = "<group>"; };
+		98BE81F826C1699D00293A45 /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow_down.png; path = ../../../arrow_down.png; sourceTree = "<group>"; };
+		98BE81F926C1699D00293A45 /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "../../../arrow_down@2x.png"; sourceTree = "<group>"; };
+		98BE820026C1782200293A45 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../../../pause.png; sourceTree = "<group>"; };
+		98BE820126C1782200293A45 /* pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@3x.png"; path = "../../../pause@3x.png"; sourceTree = "<group>"; };
+		98BE820226C1782200293A45 /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "../../../pause@2x.png"; sourceTree = "<group>"; };
+		98DD7A1A26C1370D00B1D61C /* theshins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = theshins.jpg; path = ../../../../theshins.jpg; sourceTree = "<group>"; };
+		98DD7A1C26C1371F00B1D61C /* grizly_bear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grizly_bear.jpg; path = ../../../../grizly_bear.jpg; sourceTree = "<group>"; };
+		98DD7A1E26C1373000B1D61C /* fort_atlantic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fort_atlantic.jpg; path = ../../../../fort_atlantic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +134,94 @@
 		98BE817226C12BCE00293A45 /* audioplayer_app */ = {
 			isa = PBXGroup;
 			children = (
+				98BE81AA26C1348400293A45 /* images */,
+				98BE81A226C1333F00293A45 /* SongsProvider */,
+				98BE819626C12E3F00293A45 /* Songs */,
+				98BE819126C12D2800293A45 /* Player */,
+				98BE818826C12CC400293A45 /* Playlist */,
 				98BE817326C12BCE00293A45 /* AppDelegate.swift */,
 				98BE817526C12BCE00293A45 /* SceneDelegate.swift */,
-				98BE817726C12BCE00293A45 /* ViewController.swift */,
 				98BE817926C12BCE00293A45 /* Main.storyboard */,
 				98BE817C26C12BCF00293A45 /* Assets.xcassets */,
 				98BE817E26C12BCF00293A45 /* LaunchScreen.storyboard */,
 				98BE818126C12BCF00293A45 /* Info.plist */,
 			);
 			path = audioplayer_app;
+			sourceTree = "<group>";
+		};
+		98BE818826C12CC400293A45 /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				98BE818926C12CE300293A45 /* PlaylistController.swift */,
+				98BE818C26C12CFC00293A45 /* SongCell.swift */,
+				98BE818D26C12CFC00293A45 /* SongCell.xib */,
+				98BE81C826C15D3700293A45 /* HeaderView.swift */,
+			);
+			path = Playlist;
+			sourceTree = "<group>";
+		};
+		98BE819126C12D2800293A45 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				98BE819226C12D5500293A45 /* PlayerController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		98BE819626C12E3F00293A45 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				98BE819726C12E5D00293A45 /* Let Your Heart Hold Fast.mp3 */,
+				98BE819D26C12EF400293A45 /* The Shins - Simple Song.mp3 */,
+				98BE819A26C12E7000293A45 /* Grizzly Bear - Two Weeks.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		98BE81A226C1333F00293A45 /* SongsProvider */ = {
+			isa = PBXGroup;
+			children = (
+				98BE81A326C1336E00293A45 /* Song.swift */,
+				98BE81A726C1340E00293A45 /* SongProvider.swift */,
+			);
+			path = SongsProvider;
+			sourceTree = "<group>";
+		};
+		98BE81AA26C1348400293A45 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				98BE820026C1782200293A45 /* pause.png */,
+				98BE820226C1782200293A45 /* pause@2x.png */,
+				98BE820126C1782200293A45 /* pause@3x.png */,
+				98BE81F826C1699D00293A45 /* arrow_down.png */,
+				98BE81F926C1699D00293A45 /* arrow_down@2x.png */,
+				98BE81F726C1699D00293A45 /* arrow_down@3x.png */,
+				98BE81F026C1690300293A45 /* sound.png */,
+				98BE81EF26C1690300293A45 /* sound@2x.png */,
+				98BE81F126C1690300293A45 /* sound@3x.png */,
+				98BE81E926C167ED00293A45 /* share.png */,
+				98BE81E826C167ED00293A45 /* share@2x.png */,
+				98BE81EA26C167ED00293A45 /* share@3x.png */,
+				98BE81E326C1667800293A45 /* chevron-right.png */,
+				98BE81E126C1667800293A45 /* chevron-right@2x.png */,
+				98BE81E226C1667800293A45 /* chevron-right@3x.png */,
+				98BE81DA26C165C400293A45 /* chevron-left.png */,
+				98BE81DB26C165C400293A45 /* chevron-left@2x.png */,
+				98BE81DC26C165C400293A45 /* chevron-left@3x.png */,
+				98BE81D426C1650A00293A45 /* play_button.png */,
+				98BE81D326C1650A00293A45 /* play_button@2x.png */,
+				98BE81D526C1650A00293A45 /* play_button@3x.png */,
+				98BE81C026C138A400293A45 /* theshins@2x.jpg */,
+				98BE81BF26C138A400293A45 /* theshins@3x.jpg */,
+				98BE81BC26C1387600293A45 /* grizly_bear@3x .jpg */,
+				98BE81B926C1386100293A45 /* grizly_bear@2x.jpg */,
+				98BE81B426C137E200293A45 /* fort_atlantic@2x.jpg */,
+				98BE81B526C137E200293A45 /* fort_atlantic@3x.jpg */,
+				98DD7A1E26C1373000B1D61C /* fort_atlantic.jpg */,
+				98DD7A1C26C1371F00B1D61C /* grizly_bear.jpg */,
+				98DD7A1A26C1370D00B1D61C /* theshins.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +281,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98BE81D626C1650A00293A45 /* play_button@2x.png in Resources */,
+				98BE81B726C137E200293A45 /* fort_atlantic@3x.jpg in Resources */,
+				98BE819B26C12E7000293A45 /* Grizzly Bear - Two Weeks.mp3 in Resources */,
+				98BE81D826C1650A00293A45 /* play_button@3x.png in Resources */,
+				98BE820426C1782200293A45 /* pause@3x.png in Resources */,
+				98BE81B626C137E200293A45 /* fort_atlantic@2x.jpg in Resources */,
+				98DD7A1B26C1370D00B1D61C /* theshins.jpg in Resources */,
+				98BE81DD26C165C400293A45 /* chevron-left.png in Resources */,
+				98BE81EC26C167ED00293A45 /* share.png in Resources */,
+				98BE820526C1782200293A45 /* pause@2x.png in Resources */,
+				98BE81F426C1690300293A45 /* sound@3x.png in Resources */,
+				98BE818F26C12CFC00293A45 /* SongCell.xib in Resources */,
+				98BE81FB26C1699D00293A45 /* arrow_down.png in Resources */,
+				98BE81F326C1690300293A45 /* sound.png in Resources */,
+				98BE81FC26C1699D00293A45 /* arrow_down@2x.png in Resources */,
+				98BE81BA26C1386100293A45 /* grizly_bear@2x.jpg in Resources */,
+				98BE819E26C12EF400293A45 /* The Shins - Simple Song.mp3 in Resources */,
+				98BE819826C12E5D00293A45 /* Let Your Heart Hold Fast.mp3 in Resources */,
+				98BE81DF26C165C400293A45 /* chevron-left@3x.png in Resources */,
+				98BE820326C1782200293A45 /* pause.png in Resources */,
 				98BE818026C12BCF00293A45 /* LaunchScreen.storyboard in Resources */,
+				98DD7A1F26C1373000B1D61C /* fort_atlantic.jpg in Resources */,
+				98BE81FA26C1699D00293A45 /* arrow_down@3x.png in Resources */,
 				98BE817D26C12BCF00293A45 /* Assets.xcassets in Resources */,
+				98BE81F226C1690300293A45 /* sound@2x.png in Resources */,
+				98BE81C126C138A400293A45 /* theshins@3x.jpg in Resources */,
+				98BE81EB26C167ED00293A45 /* share@2x.png in Resources */,
+				98BE81D726C1650A00293A45 /* play_button.png in Resources */,
 				98BE817B26C12BCE00293A45 /* Main.storyboard in Resources */,
+				98DD7A1D26C1371F00B1D61C /* grizly_bear.jpg in Resources */,
+				98BE81DE26C165C400293A45 /* chevron-left@2x.png in Resources */,
+				98BE81C226C138A400293A45 /* theshins@2x.jpg in Resources */,
+				98BE81E626C1667800293A45 /* chevron-right.png in Resources */,
+				98BE81E526C1667800293A45 /* chevron-right@3x.png in Resources */,
+				98BE81ED26C167ED00293A45 /* share@3x.png in Resources */,
+				98BE81BD26C1387600293A45 /* grizly_bear@3x .jpg in Resources */,
+				98BE81E426C1667800293A45 /* chevron-right@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +328,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98BE817826C12BCE00293A45 /* ViewController.swift in Sources */,
+				98BE81A426C1336E00293A45 /* Song.swift in Sources */,
+				98BE818A26C12CE300293A45 /* PlaylistController.swift in Sources */,
+				98BE819326C12D5500293A45 /* PlayerController.swift in Sources */,
+				98BE81C926C15D3700293A45 /* HeaderView.swift in Sources */,
 				98BE817426C12BCE00293A45 /* AppDelegate.swift in Sources */,
+				98BE818E26C12CFC00293A45 /* SongCell.swift in Sources */,
 				98BE817626C12BCE00293A45 /* SceneDelegate.swift in Sources */,
+				98BE81A826C1340E00293A45 /* SongProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
