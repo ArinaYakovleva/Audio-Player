@@ -1,4 +1,4 @@
 # Audio-Player
 Приложение аудио плеер для прослушивания песен
 
-![](demo_player.mov)
+[![Watch the video](demo_player.mov)]
